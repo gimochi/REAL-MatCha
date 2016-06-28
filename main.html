@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "UTF-8">	
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3jOstB642X8XRKicCGq0jsSDA53LYqzk"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	
+	<script type="text/javascript" src="map.js"></script>
+	<title>우와아아</title>
+</head>
+<body >
+	 <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">맛챠!</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="active" role="presentation"><a href="matcha.html">메인</a></li>
+                    <li role="presentation"><a href="main.html">찾기</a></li>
+                    <li role="presentation"><a href="index.html">등록</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <div>
+	<div id="map" style=" height:200px;"class="row-centered"> ></div>
+	<br>
+	<div class="row-centered">
+		<input id="lat" type="text" placeholder="위도" >
+		<input id="lng" type="text" placeholder="경도" ><br>
+	<br>
+</div>
+<div class="row-centered">
+	<button id="pushMark" class="btn btn-success " >나와라 뿅~</button>
+	<button id="curBtn"  class="btn btn-success ">현재 쥬소맨</button>
+	<button id="markBtn" class="btn btn-success " >마커 뿅!</button>
+</div>
+	<div id="popup"></div>
+</div>
+</body>
+</html>

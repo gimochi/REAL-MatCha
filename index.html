@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3jOstB642X8XRKicCGq0jsSDA53LYqzk"></script>
+    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript"></script>
+    <meta charset="utf-8">
+</head>
+<body >
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="matcha.html">맛챠!</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="active" role="presentation"><a href="matcha.html">메인</a></li>
+                    <li role="presentation"><a href="main.html">찾기</a></li>
+                    <li role="presentation"><a href="index.html">등록</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<form method = 'post' action = 'real_control.jsp'>
+    <input type = 'hidden' name = "action" value ="insert">
+    <div class="table-responsive">
+    <table border=1 class="table">
+    <tr>
+    <td>상호명</td><td><input type = 'text' name = 'title'></td>
+    </tr>
+    <tr>
+    <td>주소</td><td><input type = "text" id="address" name = "address"></td>
+    </tr>
+    <tr>
+    <td>좌표</td><td><input type = "text" id="pos" name = "pos"></td></td>
+    </tr>
+    <tr>
+    <td>가격</td><td><input type = 'text' name = 'price'></td>
+    </tr>
+    <tr>
+    <td>영업시간</td><td><input type = 'text' name = 'sell_time'></td>
+    </tr>
+    <tr>
+    <td>설명</td><td><input type = "text" name = "info"></td>
+    </tr>
+    <tr>
+    <td>연락처</td><td><input type = 'text' name = 'phone'></td>
+    </tr>
+    </table>
+    </div>
+    <div id="map"  style=" height:200px;"class="row-centered"></div>
+    <br>
+    <div class="row-centered">
+        
+   
+    <input type="submit" class="btn btn-success ">
+
+    <button id="curBtn" class="btn btn-success ">현재 쥬소맨</button>
+</div>
+   
+    </form>
+    
+</body>
+</html>
